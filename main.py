@@ -1,4 +1,3 @@
-from turtle import position
 from ursina import * 
 from ursina.prefabs.first_person_controller import FirstPersonController
 
@@ -80,7 +79,7 @@ class Hand(Entity):
         )
     def active(self):
         self.position = Vec2(0.4,-0.5)
-    def passive(self)
+    def passive(self):
         self.position = Vec2(0.4,-0.6)
 
 for z in range(20):
