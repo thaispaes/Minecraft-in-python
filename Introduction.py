@@ -6,7 +6,7 @@ class Test_cube(Entity):
             model = 'cube',
             color = color.white,
             texture = 'white_cube',
-            rotation = Vec3(45,45,45)
+            rotation = (45,45,45,45)
             )
 
 class Test_button(Button):
@@ -28,6 +28,6 @@ test_square = Entity(model = 'quad', color = color.black, scale = (1,4), positio
 sans_texture = load_texture('assets/Sans')
 sans = Entity(model = 'quad', texture = sans_texture)
 
-test_cube = Test_cube()
+test_cube = Test_button()
 
 app.run()
