@@ -1,8 +1,8 @@
 from ursina import *
 
 class Test_cube(Entity):
-    def _init_(self):
-        super()._init_(
+    def __init__(self):
+        super().__init__(
             model = 'cube',
             color = color.white,
             texture = 'white_cube',
@@ -10,12 +10,12 @@ class Test_cube(Entity):
             )
 
 class Test_button(Button):
-    def _init_(self):
-        super()._init_(
+    def __init__(self):
+        super().__init__(
             model= 'cube',
-            texture = 'brick',
+            texture = 'brick_block',
             color = color.blue
-        )
+            )
 
 def update():
     if held_keys['a']:
